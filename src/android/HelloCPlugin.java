@@ -21,6 +21,7 @@ public class HelloCPlugin extends CordovaPlugin {
 
                 String input = data.getString(0);
                 String jniOutput = HelloCJni.hello(input);
+                HelloCJni.init();
                 String output = "Android says: " + jniOutput;
                 callbackContext.success(output);
 
