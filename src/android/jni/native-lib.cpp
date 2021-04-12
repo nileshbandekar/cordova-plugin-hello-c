@@ -101,7 +101,7 @@ void *detect_frida_loop(void *) {
  */
 
 extern "C"
-JNIEXPORT void JNICALL Java_sg_vantagepoint_antifrida_MainActivity_init(JNIEnv *env, jobject thisObj) {
+JNIEXPORT void JNICALL HelloCJni_MainActivity_init(JNIEnv *env, jobject thisObj) {
 
     pthread_t t;
 
